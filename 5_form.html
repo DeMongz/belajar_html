@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <!-- form memiliki 5 elemen yang sering digunakan: input, textarea, select, button, label -->
+    <!-- input: dimana user bisa mengirimkan sesuatu biasanya berupa textfield -->
+    <!-- textarea: sama seperti textfield tapi biasanya digunakan untuk mengisi komentar, saran, atau alamat -->
+    <!-- select: digunakan untuk membuat dropdown atau combobox -->
+    <!-- button: tombol untuk mengirimkan data -->
+    <!-- label: untuk menandai sebuah elemen input -->
+
+    <!-- tag input -->
+    <!-- atribut pada tag input type="(text, password, radio, checkbox)" -->
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="" id="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password">
+        <br><br>
+        <label for="alamat">Alamat : </label><br>
+        <textarea name="" id="alamat"></textarea>
+        <br><br>
+        <!-- penggunaan name pada radio button berfungsi untuk melakukan group agar tidak bisa memilih lebih dari 1 -->
+        <label for="jeniskelamin">Jenis Kelamin : </label><br>
+        <input type="radio" name="jeniskelamin" id="pria"><label for="pria">Pria</label>
+        <input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">Wanita</label>
+        <br><br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="tiduran"><label for="tiduran">Tiduran</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+        <br><br>
+        <label for="asalkota">Asal Kota : </label>
+        <select name="" id="asalkota">
+            <option value="asalkota">Jakarta</option>
+            <option value="asalkota">Bogor</option>
+            <option value="asalkota">Depok</option>
+            <option value="asalkota">Tangerang</option>
+            <option value="asalkota">Bekasi</option>
+        </select>
+        <br><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br><br>
+
+    <h1>====== LATIHAN ======</h1>
+    <!-- latihan -->
+    <table border="0" cellspacing="0" cellpadding="5">
+        <tr>
+            <td><label for="username">Username</label></td>
+            <td><input type="text" id="username"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td><textarea name="alamat" id="alamat"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="radio" name="jeniskelamin" id="pria"><label for="pria">Pria</label>
+                <input type="radio" name="jeniskelamin" id="wanita"><label for="wanita">Wanita</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="hobby" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+                <input type="checkbox" name="hobby" id="tiduran"><label for="tiduran">Tiduran</label>
+                <input type="checkbox" name="hobby" id="ngoding"><label for="ngoding">Ngoding</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="asalkota">Asal Kota : </label></td>
+            <td>
+                <select name="asalkota" id="asalkota">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bogor">Bogor</option>
+                    <option value="depok">Depok</option>
+                    <option value="tangerang">Tangerang</option>
+                    <option value="bekasi">Bekasi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

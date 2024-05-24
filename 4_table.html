@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <!-- ada 5 atribut yang bisa digunakan untuk tag table -->
+    <!-- atribut yang bisa digunakan: border, cellspacing, cellpadding, colspan, rowspan -->
+    <!-- border: untuk menambahkan garis atau border pada table -->
+    <!-- cellspacing: untuk mengatur jarak pada tiap tiap cell -->
+    <!-- cellpadding: untuk mengatur luas pada tiap tiap cell -->
+    <!-- colspan: digunakan untuk menggabungkan 2 buah kolom -->
+    <!-- rowspan: digunakan untuk menggabungkan 2 buah baris -->
+
+    <!-- table sederhana -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <!-- table kompleks -->
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <th></th>
+            <th>kolom 1</th>
+            <th>kolom 2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>baris 1, kolom 1</td>
+                <td>baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <!-- penerapan colspan dan rowspan -->
+    <!-- menggabungkan 2 buah kolom pada baris pertama -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td rowspan="3">rowspan = 3</td>
+            <td colspan="2">colspan = 2</td>
+        </tr>
+        <tr>
+            
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    
+    <br>
+    <br>
+
+    <!-- latihan -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2">?</td>
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+</body>
+</html>
